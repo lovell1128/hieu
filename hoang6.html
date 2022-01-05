@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <head>
+        <title>GEAR STORE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="font/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="hoang6.css"> 
+        <link rel="stylesheet" href="hoang6-item.html">
+        <link rel="stylesheet" href="hoang6-Cart.html">
+             
+        
+        
+    <body>
+    <div> 
+	<div id="header">
+            <div class="head">
+                <ul class="head1" >
+                <li id="header2"></li>   
+                <li> <div class="Cart-Icon" style="color: white;"  >Giỏ Hàng <i class="icon-shop ti-shopping-cart-full"></i></div></li>  
+                <li class="user" style="color: white;" onclick="activemodalbox()" > Tài Khoản <i class="icon-user ti-user"></i></li> 
+                <li id="header1"></li> 
+                </ul>   
+        </div>
+
+
+
+        
+               
+
+            <div class="headerbox1">
+                <image src="image/logo.jpg" style="height: 100px"/>
+                <image src="image/logo1.jpg" style="height: 100px"/>
+                
+            </div>
+            <div class="headerbox2">
+                <ul class="headerbox2-content">
+                   <li><a href="">Trang chủ</a></li>
+                   <li><div style="color: white;" class="item-page "  onclick="showprodhome(1);">Sản Phẩm</div></li>
+                    <li><a href="#footer">Liên Hệ</a></li>
+                   
+                </ul>
+            </div>
+            <div class="headerbox3">
+                <div><i class="btn-search ti-search" onclick="finprod();"></i></div>
+                <i id="search-box"><input id="search-box1" type="text" placeholder="Nhập tại đây"/><i class="boxsearch ti-search" onclick="findbyname(1);"></i></i>
+             </div>
+
+             <div id="topmenu" >
+               
+                <div id="list"> 
+                    <i class="icon-list ti-list"> </i>
+                <ul class="content-menu">
+                   <li><a onclick="searchbytype3(1);" class="item-banhngot">Bánh Ngọt </a></li>
+                   <li><a onclick="searchbytype4(1);" class="item-banhman"> Bánh Mặn</a></li>
+                   <li><a onclick="searchbytype2(1);" class="item-banhkem"> Bánh Bông lan</a></li>
+                   <li><a onclick="searchbytype1(1);" class="item-banhmi"> Bánh Mì </a></li>
+                </ul> 
+               
+               </div>
+           </div>
+    </div>    
+
+    <div id="content" style="display: none;">
+      <h1 class="gioi_thieu" >LOGO STORE</h1>
+      <div id="contenthome">
+      
+      </div>
+      <div id="contentprod">
+          
+      </div>
+      
+  </div>
+       
+          <div class="content">
+                
+            
+            <div class="slider-container"> 
+
+                  <div class="slide">
+                  <img src="IMG/top10.jpg" alt="">
+                       
+                  </div>
+                    
+                  <div class="slide">
+                        <img src="IMG/top5.jpg" alt="">
+                  </div>
+                 
+                  <div class="slide">
+                         <img src="IMG/top11.jpg" alt="">
+                  </div>
+
+
+                  <div class="slide">
+                        <img src="IMG/top3.jpg" alt="">
+                 </div>
+
+            </div>
+
+<h1 style="font-family: 'Times New Roman', Times, serif; font-size: 45px ;background-image: linear-gradient(45deg, blanchedalmond, #ff47009e); margin-top: 15px; margin-bottom: -40px; width: max-content;">Sự kiện mới</h1>  
+            <div id="news">
+               
+             <div class="newItem" > <img src="IMG\news2.jpg" style="width:100%; ">
+                   <div onclick="opennews()"   class="title-news" >Xem chi tiết!!!   </div>  
+                         <div id="news-pop">
+                        <h1>Ra mắt bánh bông lan trứng muối ngày!!! 12/12/2022</h1>
+                        <h1>Hãy trải nghiệm trực tiếp tại shop để có ưu đãi giảm giá cực khủng!!!!</h1>
+                        <h1>Chi Nhánh:100 Nguyễn Cữu Vân ,Quận Bình Thạnh,TPHCM</h1>
+                        <h1>SĐT:0123456789</h1>
+                        <i class="ti-angle-up"></i>
+                  </div>
+                  
+            </div>
+
+
+                <div class="newItem" >  <img src="IMG\news1.jpg"    style="width:100%">
+                       <div onclick="opennews2()" class="title-news"> Xem chi tiết!!!   </div>  
+                              <div id="news-pop2">
+                                   <h1>Chỉ DUY NHẤT ngày 1/1/2022</h1>
+                                   <h1>Ưu đãi mua 1 tặng 1 dành cho 100 khách hàng đầu tiên mua Bánh kem loại nhỏ</h1>
+                                   <h1>Chi Nhánh:100 Nguyễn Cữu Vân ,Quận Bình Thạnh,TPHCM</h1>
+                                   <h1>SĐT:0123456789</h1>
+                                   <i class="ti-angle-up up2"></i>
+                              </div>
+                            
+                            
+                 </div>
+
+
+                    <div class="newItem"> <img src="IMG\news3.jpg" style="width:100%;">
+                     <div  onclick="opennews3()" class="title-news" >Xem chi tiết!!!  </div>    
+                  
+                        <div id="news-pop3">
+                              <h1>Ra mắt maracon macha cho tín đồ trà xanh !!!</h1>
+                              <h1>KHUYẾN MÃI 50% CHO 100 KHÁCH MUA HÀNG ĐẦU TIÊN TẠI CỬA HÀNG</h1>
+                              <h1>!!!TẶNG KÈM 1 BÁNH KEM BẮP CHO MỖI KHÁCH HÀNG MUA HÀNG TRỰC TIẾP!!!</h1>
+                              <h1>Chi Nhánh:20 An Dương Vương,Quận 5,TPHCM</h1><h1>Chi Nhánh:100 Nguyễn Cữu Vân ,Quận Bình Thạnh,TPHCM</h1>
+                              <h1>SĐT:0123456789</h1>
+                              <i class="ti-angle-up up3 "></i>
+                  
+                  
+                  
+                     </div> 
+                     
+                  </div>
+                   
+              
+         </div>
+                      
+                      
+            
+            
+            <div class="content-header">
+                            <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 45px ;background-image: linear-gradient(45deg, blanchedalmond, whitesmoke);">Bán Chạy</h1>
+                            <p class="arrow">
+                            <span class="arrowLeft ti-angle-left">   </span>    
+                            <span class="arrowRight ti-angle-right">  </span>             
+                            </p>  
+
+            </div>
+
+
+                <div class="content-container">
+                           
+                              <div class=" item ">
+                                 <picture><img class="Image" src="3x4/1.png" /> </picture>
+                                 <div class="title">
+                                       <h3>Bánh Mì</h3>
+                                       <b>Giá: 20000</b>  
+                                 </div>  
+                                       <div class="buy-item" > 
+                                       <p class="star">
+					               	  <strong>&star;</strong>
+					               	<strong>&star;</strong>
+					               	<strong>&star;</strong>
+					               	<strong>&star;</strong>
+					               	<strong>&star;</strong>
+					                </p>    
+                                    </div>
+                              </div>
+
+                              
+                               
+                              <div class=" item  ">
+                                    <picture><img class="Image" src="3x4/2.png" /> </picture>
+                                    <div class="title">
+                                          <h3>Bánh Sinh Nhật</h3>
+                                          <b>Giá:200000</b>                                     
+                                    </div>
+                                          <div  class="buy-item" > 
+                                           <p class="star">
+                                                          <strong>&star;</strong>
+                                                        <strong>&star;</strong>
+                                                        <strong>&star;</strong>
+                                                        <strong>&star;</strong>
+                                                        <strong>&star;</strong>
+                                                  </p>   
+                                        </div>
+                                 </div>
+
+                              <div class=" item  ">
+                                <picture><img class="Image" src="3x4/3.png" /> </picture>
+                                <div class="title">
+                                      <h3>Bánh hotdog</h3>
+                                      <b>Giá:20000</b>                                     
+                                </div>
+                                      <div  class="buy-item" > 
+                                       <p class="star">
+					                	  <strong>&star;</strong>
+					                	<strong>&star;</strong>
+					                	<strong>&star;</strong>
+					                	<strong>&star;</strong>
+					                	<strong>&star;</strong>
+					                </p>   
+                                    </div>
+                             </div>
+
+
+                             <div class=" item  ">
+                                <picture><img class="Image" src="3x4/4.png" /> </picture>
+                                <div class="title">
+                                      <h3>Bánh hamburger</h3>
+                                      <b>Giá:20000</b>                                     
+                                </div>
+                                      <div  class="buy-item" > 
+                                       <p class="star">
+					            	  <strong>&star;</strong>
+					            	<strong>&star;</strong>
+					            	<strong>&star;</strong>
+					            	<strong>&star;</strong>
+					            	<strong>&star;</strong>
+					            </p>   
+                                    </div>
+                             </div>
+
+                             <div class=" item  ">
+                                <picture><img class="Image" src="3x4/5.png" /> </picture>
+                                <div class="title">
+                                      <h3>Bánh Su kem</h3>
+                                      <b>Giá: 50000</b>                                     
+                                </div>
+                                      <div  class="buy-item" > 
+                                       <p class="star">
+					            	  <strong>&star;</strong>
+					            	<strong>&star;</strong>
+					            	<strong>&star;</strong>
+					            	<strong>&star;</strong>
+					            	<strong>&star;</strong>
+					            </p>   
+                                    </div>
+                             </div>
+
+
+                             <div class=" item  ">
+                                <picture><img class="Image" src="3x4/6.png" /> </picture>
+                                <div class="title">
+                                      <h3>Bánh phô mai</h3>
+                                      <b>Giá: 120000</b>                                     
+                                </div>
+                                      <div  class="buy-item" > 
+                                       <p class="star">
+					            	<strong>&star;</strong>
+					            	<strong>&star;</strong>
+					            	<strong>&star;</strong>
+					            	<strong>&star;</strong>
+					            	<strong>&star;</strong>
+					            </p>   
+                                    </div>
+                             </div>
+
+
+                             <div class=" item  ">
+                                <picture><img class="Image" src="3x4/7.png" /> </picture>
+                                <div class="title">
+                                      <h3>Bánh maracon</h3>
+                                      <b>Giá: 30000</b>                                     
+                                </div>
+                                      <div  class="buy-item" > 
+                                       <p class="star">
+						         <strong>&star;</strong>
+						         <strong>&star;</strong>
+						         <strong>&star;</strong>
+						         <strong>&star;</strong>
+						         <strong>&star;</strong>
+					                     </p>   
+                                    </div>
+                             </div>
+
+
+                             <div class=" item  ">
+                                <picture><img class="Image" src="3x4/8.png" /> </picture>
+                                <div class="title">
+                                      <h3>Bánh bông lan</h3>
+                                      <b>Giá: 40000</b>                                     
+                                </div>
+                                      <div  class="buy-item" > 
+                                       <p class="star">
+					           	<strong>&star;</strong>
+					           	<strong>&star;</strong>
+					           	<strong>&star;</strong>
+					           	<strong>&star;</strong>
+					           	<strong>&star;</strong>
+					                    </p>   
+                                    </div>
+                             </div>
+  
+
+                           
+                             
+
+                 
+         </div>  
+
+<h1 style="font-family: 'Times New Roman', Times, serif; font-size: 45px ;background-image: linear-gradient(45deg, blanchedalmond, #ff47009e); margin-top: 8%;margin-bottom: -10%;width: max-content;">1 Số thông tin khác</h1>
+           
+         <div id="ship">
+            
+            
+            
+            <div class="deliver" >
+                  <img src="IMG/shipp.jpg"   onclick="shi()">
+                  <div id="sh">
+                        <a href="https://www.foody.vn/bo-suu-tap/0935536961/delivery-now-12839573" style="font-size: 30px;color: red;font-weight: 30px; ">  NOW-DELIVER <i class="ti-truck " style="font-size: 60px;color: red;"></i> </a>
+                   </div>
+            </div>
+
+            
+             <div id="location">
+                   <img src="IMG/house.png"  onclick="chinhah()">
+                   <div id="chinhanh">
+                  <a href="https://map.coccoc.com/map/38002415401430707?title=Tr%C3%A0+s%E1%BB%AFa+Queenny&reqid=7ajC4Ozp">
+                        Chi Nhánh:20 An Dương Vương,Quận 5,TPHCM 
+                        <i class="ti-location-pin"></i>
+                        
+                  </a> 
+                       <br> 
+                        <a href="https://map.coccoc.com/map/2409486196898394">
+                              Chi Nhánh:100 Nguyễn Cữu Vân ,Quận Bình Thạnh,TPHCM
+                               <i class="ti-location-pin"></i>
+                               
+                        </a>
+                  </div>
+            </div>
+                  
+             <div class="design"><img src="IMG/design-icon.png" style="top: -16px;" onclick="designerr()" >
+                  
+                        <div id="designer">
+                              <h1>HOÀNG HUỲNH TRUNG HIẾU</h1>
+                              <h1>NGUYỄN TẤN THÀNH</h1>
+                              
+                          </div> 
+                  </div>
+        </div>
+
+
+
+        
+
+
+
+      
+
+
+
+      
+
+
+
+
+        
+        <div id="ykien">
+            <h1>Hộp Đóng góp ý kiến</h1>
+            <input id="email" type="text" placeholder="Enter EMail">
+            <div></div>
+            <textarea rows="10" cols="80" id="cmt" type="text" placeholder="ý kiến của bạn"></textarea>
+            <a><input type="submit" onclick="boxykk()" ></a>
+            
+            
+        </div>
+  
+   </div>
+     
+
+     <div id="footer">
+        <div class="footerbox1">
+            <h3> Liên hệ</h3>
+            <ul>
+            <li> <a href="https://mail.google.com/mail/u/0/#inbox">Mail   <i class="ti-email" ></i></a> </li>
+            <li><a href="">Hotline1 <i class="ti-mobile"></i></a> </li>
+            <li><a href="">Hotline2 <i class="ti-mobile"></i></a> </li>
+            <li><a href="">Chăm sóc khách hàng  <i class="ti-help"></i></a> </li>
+            <li><a href="">Dịa chỉ <i class="ti-location-pin"></i></a></li>
+         </ul>
+       </div>
+       <div class="footerbox2">
+            <h3>Theo dõi chúng tôi</h3> 
+            <ul>
+            <li> <a href="https://www.facebook.com/">Facebook <i class="ti-facebook"></i></a> </li>
+            <li><a href="https://www.instagram.com/">Instagram <i class="ti-instagram" style="margin-left: 5px;"></i></li></a>
+            <li><a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter <i class="ti-twitter-alt" style="margin-left: 5px;" ></i></li></a>
+            <li><a href="https://www.youtube.com/">Youtube <i class="ti-youtube" style="margin-left: 5px;"></i></li></a>
+         </ul>
+       </div>
+         <div class="footerbox3">
+             <a> Cửa hàng chúng tôi đang trong quá trình phát triển nếu có vấn đề xin hãy báo cáo ngay cho chúng tôi để kịp thời khắc phục </a>
+             <h3>Xin chân thành cảm ơn quý khách đã ghé thăm !!!</h3>
+         </div>
+      </div>
+     </div>
+
+        <div class="modal" id="boxmodal">
+            
+           <div class="modal-container">
+              <div class="close-button " onclick="activemodalbox()"> <i class="ti-close">  </i> </div>  
+                <div class="modal-header">
+                  <b> Đăng Nhập</b>  
+                </div>
+           <div class="modal-body">
+               <br> <br> 
+               <label for="" class="modal-label"> <i class="ti-user"></i> <b>Tên Đăng Nhập</b>   </label>
+               <br> <br>
+               <input type="text" id="user-account" placeholder="Nhập tên đăng Nhập" >
+               <br> <br>
+               <label for="" class="modal-label"> <i class="ti-key"> <b>Mật Khẩu </b></i></label>
+               <br> <br>
+               <input type="password" id="user-password" placeholder="Nhập mật khẩu"> 
+               <br> <br>  
+               <span>  Quên mật khẩu ?</span>
+            </div>            
+             <div class="modal-footer">
+                 <button class="login-button  "onclick="login();"> Đăng Nhập </button>
+            <button class="register-button js-register">Đăng Ký </button>
+          </div>
+                 </div>
+
+
+
+            <div class="modal-container-2">
+                <div class="close-button-2 " onclick="activemodalbox()"><i class="ti-close"></i></div>  
+                  <div class="modal-header">
+                      <b>Đăng Ký</b>
+                  </div>
+             <div class="modal-body">
+                <label for="" class="modal-label"> <i class="ti-layout-cta-right"></i> <b>Họ Tên </b>  </label>
+                <br> 
+                <input type="text" id="user-name" placeholder="Nhập tên họ tên" >
+                <br> <br>
+                 <label for="" class="modal-label"> <i class="ti-user"></i> <b>Tên Đăng Nhập </b>  </label>
+                 <br> 
+                 <input type="text" id="user-account1" placeholder="Nhập tên đăng Nhập" >
+                 <br> <br>
+                 <label for="" class="modal-label"> <i class="ti-key"> <b>Mật Khẩu </b> </i></label>
+                 <br> 
+                 <input type="password" id="user-password1" placeholder="Nhập mật khẩu"> 
+                 <br> <br>  
+                 <label for="" class="modal-label"> <i class="ti-lock"> <b>Nhập Lại Mật Khẩu</b></i></label>
+                 <br> 
+                 <input type="password" id="user-password-check" placeholder="Nhập lại mật khẩu"> 
+                 <br> <br>             
+                
+              </div>            
+               <div class="modal-footer">
+              <button class="login-button js-login"> Đăng Nhập </button>
+              <button class="register-button" onclick="crnewuser();"> Đăng Ký </button>
+  
+              </div>
+  
+              </div>
+        </div>
+<div class="cart-box">
+        <div id="cart" style="background-image: url(image/cart.PNG);" >
+            <div class=" close-cart "> <i class="ti-close">  </i> </div>
+         
+            <div style="padding-top: 50px;font-size:30px; opacity: 0.8;font-optical-sizing: 5px;font-weight: 30px;text-align: center;">GIỎ HÀNG</div>
+                                               
+            <table width="100%" >
+             <thead>
+                 <tr >
+                     <th class="image">Sản phẩm</th>
+                     <th class="item">Tên sản phẩm</th>
+                     <th class="qty">Số lượng</th>
+                     <th class="price">Giá tiền</th>
+                     <th class="remove">Xoá</th>
+                 </tr>       
+               
+             </thead>
+             <tbody id="myCart">
+                 
+             </tbody>
+            
+             
+
+             <th colspan="4" style="font-weight: bold; font-size: 20px;" id="totalallprod">Tổng tiền:</th>
+          </table>
+            <input type="text" id="address" placeholder="nhập địa chỉ" />
+            <input type="text" id="phone" placeholder="nhập số điện thoại"/>
+            <button  class="pay" style="background-color:#f7a610 ;font-size: 25px; left: 45%;border-radius: 3px;position: absolute;" onclick="createbill();"> 
+             Thanh Toán 
+         </button>
+
+    </div>
+</div>
+        <div id="history">
+        <div id="hishd" style="background-image: url(image/cart.PNG);" >
+         
+            <div class=" close-cart "onclick="closehis()"> <i class="ti-close">  </i> </div>
+            <div style="padding-top: 50px;font-size:30px; opacity: 0.8;font-optical-sizing: 5px;font-weight: 30px;text-align: center;">Lịch Sử</div>
+                                               
+            <table width="100%" id="showcontentbillhome">
+             
+          </table>
+
+        </div>
+        </div>
+
+        <div id="detailprod">
+            <div id="detailprod-box" style="background-image: url(IMG/detailprod.jpg); background-size: cover;" >
+
+            </div>
+        </div>
+        
+  
+        <script src="hoang6.js"></script>
+    <script src="product.js"></script>
+  
+   
+
+</body>
+</html>

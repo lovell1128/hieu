@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/js.js" ></script>            
+        <style>
+            #wrapperadmin{
+                background-image: url(image/admin.PNG);
+                background-size: cover;
+                height: 1080px;
+                width: 101%;
+                margin: -10px;
+            }
+            #menuadmin{
+                position: absolute;
+                height:90px;
+                background-color: #4e1f12;
+                box-shadow: 10px 4px 16px 7px #8f3907;
+                top: 100px;
+                width: 60%;
+                animation-name: ani1;
+                animation-duration: 2s;
+                
+            }
+            @keyframes ani1 {
+                0%   {left:-50%;}
+                100% {left:0px;}
+            }
+            #menuadmin ul li{
+                float: left;
+                padding: 20px;
+                background-color: #ffcc66;
+                border-top: 8px #99cc00 solid;
+                border-left: 3px #99cc00 solid;
+                border-right: 5px #99cc00 solid;
+                border-radius: 45%;
+                font-size: 24px;
+                height: 80%;
+                width: 10%;
+                margin-left: 6%;
+                margin-top: -30px;
+                box-shadow: 9px 0px #ff6666;
+                text-align: center;
+            }
+            #menuadmin ul li:hover{
+                 border-top: 20px #99cc00 solid;
+                 animation-name: ani2;
+                 animation-duration: 1s;
+                 border-top: 30px #99cc00 solid; 
+                 box-shadow: 15px 0px #ff6666;
+                 background-color: #f5bd00;
+            }
+            @keyframes ani2 {
+                0%   { border-top: 8px #99cc00 solid; box-shadow: 9px 0px #ff6666; background-color: #ffcc66}
+                100% { border-top: 30px #99cc00 solid; box-shadow: 15px 0px #ff6666; background-color: #f5bd00}
+            }
+            #contentadmin{
+                position: absolute;
+                top: 250px;
+                width: 88%;
+                background-color: #e2e4f4;
+                height: 800px;
+                left: 7%;
+                right: 5%;
+                border-radius: 3%; 
+                z-index: 1;
+            }
+            #contentadmin table{
+                position: absolute;
+                top: -8px;
+                right: 5px;
+                
+            }
+            #contentadmin table tr{
+                position: relative;
+                top: 50px;
+                width: 93%;
+                right: 80px;
+                
+            }
+            #contentadmin table tr th{
+                font-size: 37px;
+                padding: 0px 142px 0px 35px;
+                text-align: center;
+                position: relative;
+                bottom: 0px;
+                animation-name: ani7;
+                animation-duration: 1s;
+                
+            }
+            
+            #contentadmin table tr td{
+                font-size: 26px;
+                padding: 10px 0px 15px 3px;
+                background-color: #d9a183bf;
+                box-shadow: 0px 0px 0px 5px #ae672d;
+                position: relative;
+                bottom: 0px;
+                left:0px;
+                animation-name: ani7;
+                animation-duration: 1s;
+            }
+            @keyframes ani7{
+                0% { bottom: -600px ; left: -600px;}
+                100{ bottom: 0px; left :0px;}
+            }
+            #contentadmin table tr td button{
+                background-color: #dcb29f;
+                border: 0px;
+                font-size: 15px;
+                color: white;
+                display: inline-table;
+            }
+            #contentadmin table tr td button:hover{
+                background-color: white;
+                color: #000000;
+            }
+            #contentadmin table tr td input[type="file"]{
+                width: 86px;
+                background-color: #ffffff;
+            }
+            #contentadmin ul{
+                position: absolute;
+                list-style-type: none;
+                bottom: 1%;
+                left: 45%;                
+            }
+            #contentadmin ul li{
+                display: inline-block;
+                border: 2px #ffffff solid;
+            }
+            #contentadmin ul li:hover{
+                background-color: #ccccff;
+                font-size: 20px;
+            }
+            #Prodadmin{
+                position: absolute;
+                top: 245px;
+                left: 97px;
+                background-color: #e2e4f4;
+                border-left: 10px #009999 solid;
+                border-top-left-radius: 35%;
+                border-top: 10px #009999 solid;
+                border-bottom-left-radius: 25%;
+                font-size: 26px;
+                padding: 5px;
+                padding-bottom: 24px;
+                color: #006666;
+                animation-name: none;
+                animation-duration: 0s;
+            }
+            @keyframes ani3 {
+                0%   { top: 242px;}
+                100% { top: 208px;}
+            }
+            @keyframes ani4{
+                0%  {top: 208px;}
+                100%{top: 242px;}
+            }
+            #Accadmin{
+                position: absolute;
+                top: 245px;
+                left: 200px;
+                background-color: #e2e4f4;
+                border-top: 10px #009999 solid;
+                border-bottom-left-radius: 25%;
+                font-size: 26px;
+                padding: 5px;
+                padding-bottom: 24px;
+                color: #006666;
+            }
+            #Billadmin{
+                position: absolute;
+                top: 245px;
+                left: 295px;
+                background-color: #e2e4f4;
+                border-top: 10px #009999 solid;
+                border-bottom-left-radius: 25%;
+                font-size: 26px;
+                padding: 5px;
+                padding-bottom: 24px;
+                color: #006666;
+            }
+            #Reportadmin{
+                position: absolute;
+                top: 245px;
+                left: 342px;
+                background-color: #e2e4f4;
+                border-right: 10px #009999 solid;
+                border-top-right-radius: 35%;
+                border-top: 10px #009999 solid;
+                border-bottom-left-radius: 25%;
+                font-size: 26px;
+                padding: 5px;
+                padding-bottom: 24px;
+                color: #006666;
+                
+            }
+            #inputadmin{
+                height: max-content;
+                width: 30%;
+                background-color: #009999;
+                position: absolute;
+                top: 250px;
+                right: 600px;
+                border-radius: 15%; 
+                animation-name: none;
+                animation-duration: 0s;
+            }
+            @keyframes ani5{
+                0%  {top: 250px; right: 600px;}
+                80% {top: 250px; right:  30px; }
+                100%{top: 120px; right:  30px; }
+            }
+            @keyframes ani6{
+                0%  {top: 120px; right:  30px; }
+                30% {top: 250px; right:  30px; }
+                100%{top: 250px; right: 600px;}
+            }
+            #inputprod{
+                margin-top: -32px;
+                background-color:   #009999;
+                width: max-content;
+                font-size: 18px;
+                color: #333333;
+                padding: 10px;
+                padding-bottom: 35px;
+                border-radius: 33%;
+            }
+            #inputprod2{
+                margin-top: -32px;
+                background-color:   #009999;
+                width: max-content;
+                font-size: 18px;
+                color: #333333;
+                padding: 10px;
+                border-radius: 33%;
+                position: relative;
+                top: -30px;
+                left: 102px;
+            }
+            #inputprod:hover{
+                margin-top: -45px;
+                padding-bottom: 47px;
+                background-color: #009999;
+            }
+            #inputprod2:hover{
+                margin-top: -45px;
+                padding-bottom: 24px;
+                background-color: #009999;
+            }
+            #inputadmin input[type="text"]{
+                width: 35%;
+                padding: 2px;
+                margin-left: 2%;
+                display: inline-flex;
+                position: relative;
+                top: -20px;
+                background-color: lightyellow;
+                margin-top: 2%;
+                color: brown;
+            }
+            #inputadmin button{
+                background-color: chocolate;
+                color: white;
+                border-radius: 15px;
+            }
+            #inputadmin button:hover{
+                background-color: #996600;
+            }
+            #closeinput{
+                position: absolute;
+                right: 0px;
+                top: 1px;
+            }
+            #setitem {
+                position: absolute;
+                left: 38.7%;
+                top: -200px;
+                animation-name: ani8;
+                animation-duration: 0s;
+            }
+            #setitem input{
+                padding: 2px;
+                background-color: chocolate;
+                color: white;
+                font-size: 24px;
+                border-radius: 20px;
+            }
+            @keyframes ani8{
+                0%  {top: -200px;}
+                100%{top: 41%;}
+            }
+            #detailbill{
+                position: relative;
+                top: 21%;
+                left: 38%;
+                z-index: 2;
+                display: none;
+            }
+            #detailbill textarea{
+                text-align: center;
+                background-color: silver;
+                height: 220px;
+                width: 550px;
+                font-size: 19px;
+            }
+            #detailbill button{
+                position: absolute;
+                height: 100%;
+                width: 6%;
+                
+            }
+            #gobackhome{
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                background-color: chocolate;
+                
+            }
+            #gobackhome:hover{
+                padding: 4px;
+                background-color: red;
+                font-weight: bold;
+                
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div id="wrapperadmin">
+            <div id="menuadmin">
+                <ul style="list-style-type: none">
+                    <li onclick="showcontentadmin(1);"><b>Product</b></li>
+                    <li onclick="showcontentadmin(2);"><b>Account</b></li>
+                    <li onclick="showcontentadmin(3);"><b>Bill</b></li>
+                    <li onclick="showcontentadmin(4);"><b>Report</b></li>
+                </ul>
+            </div>
+            <div id="contentadmin">
+                
+                    <table id="contentadminbox1">
+                       
+                    </table>
+                
+                
+            </div>
+            <div id="Prodadmin"><i>Product </i></div>
+            <div id="Accadmin"><i>Account </i></div>
+            <div id="Billadmin"><i>Bill </i></div>
+            <div id="Reportadmin"><i>Report </i></div>
+            <div id="inputadmin">
+                    <div id="inputprod" onclick="inputprod(1);"><b>nhập hàng</b></div>
+                    <div id="inputprod2" onclick="inputprod(2);"><b>sửa hàng</b></div>
+                    <button id="closeinput" onclick="inputprod(0)">X</button>
+                    <input type="text" id="idprod" placeholder="id sản phẩm"/>
+                    <input type="text" id="nameprod" placeholder="tên sản phẩm"/>
+                    <input type="text" id="priceprod" placeholder="giá sản phẩm"/>
+                    <input type="text" id="quantityprod" placeholder="số lượng sản phẩm"/>
+                    <button id="inprod" onclick="createnewprod();" style="display: inline-table">nhập hàng</button>
+                    <button id="setprod"onclick="setprod();" style="display: none;">sửa hàng</button>
+            </div>
+            <div id="detailbill">
+                <button onclick="closedetailbill();">close</button>
+                <textarea id="showdetailbill" disabled="">
+                
+            </textarea>>
+            </div>
+        </div>
+        <div id="gobackhome"><a href="hoang6.html" style="text-decoration: none">Go home</a></div>
+    </body>
+</html>
